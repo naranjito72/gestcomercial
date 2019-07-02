@@ -11,6 +11,7 @@ const routes: Routes = [
   {path: '**', component: NotfoundComponent},
   {path: 'storing',
    loadChildren: () => import ('./storing/storing.module').then(mod => mod.StoringModule)}//standby y difiero
+   
 ];
 
 @NgModule({
