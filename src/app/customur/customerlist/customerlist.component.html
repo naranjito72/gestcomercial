@@ -1,1 +1,13 @@
-<a routerLink ='../customur_details/10'>Cliente</a>
+<div>
+<a routerLink ='../customer_details/10'>Cliente</a>
+</div>
+
+<div>
+<a routerLink ='../customer_details/11'>Cliente</a>
+</div >
+
+<ul>
+  <li *ngFor= "let customer of customers">
+      <a routerLink = '../customerlist'><span>{{customer}}</span></a>
+  </li>
+</ul>

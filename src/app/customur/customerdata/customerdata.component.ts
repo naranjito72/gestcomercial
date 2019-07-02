@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'gc-customerdata',
@@ -11,9 +13,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerdataComponent implements OnInit {
 
-  constructor() { }
+public identifier: any;
+
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.params.subscribe(miParams => { this.identifier = miParams [ 'id' ]; });
+    
+/*OBSERVABLE, REUTILIZA LA MEMORIA CADA VEZ*/
+/* this.identifier = this.route.params['id'];*/
   }
 
 }
