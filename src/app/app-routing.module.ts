@@ -8,9 +8,11 @@ const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '', component: HomeComponent},
   {path: 'customer', component: CustomerlistComponent},
+  {path:'customer_detail/id:', component: CustomerdataComponent},
   {path: '**', component: NotfoundComponent},
   {path: 'storing',
-   loadChildren: () => import ('./storing/storing.module').then(mod => mod.StoringModule)}//standby y difiero
+   loadChildren: () => import ('./storing/storing.module').then(mod => mod.StoringModule)}
+/*standby y difiero*/
 ];
 
 @NgModule({
