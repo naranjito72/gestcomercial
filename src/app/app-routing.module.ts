@@ -11,13 +11,9 @@ const routes: Routes = [
   {path:'customer_detail/id:', component: CustomerdataComponent},
   {path: '**', component: NotfoundComponent},
   {path: 'storing',
-<<<<<<< HEAD
+
    loadChildren: () => import ('./storing/storing.module').then(mod => mod.StoringModule)}
 /*standby y difiero*/
-=======
-   loadChildren: () => import ('./storing/storing.module').then(mod => mod.StoringModule)}//standby y difiero
-   
->>>>>>> 260a015da0c6989d432263536340ea4a020f5b9f
 ];
 
 @NgModule({
