@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "storinglist.component.scss"
+    ],
+    "names": [],
+    "file": "storinglist.component.css"
+}
